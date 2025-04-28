@@ -15,11 +15,16 @@ const home = () => {
             <ThemedLogo style={styles.logoImage}/>
             <Spacer height={20}/>
 
-            <ThemedText title={true}>AMAZING APP</ThemedText>
+            <ThemedText title={true} style={styles.title}>AMAZING APP</ThemedText>
             <Spacer height={5}/>
 
             <Link href={"/about"}>
                 <ThemedText>Go To About</ThemedText>
+            </Link>
+            <Spacer height={5}/>
+
+            <Link href={'/login'}>
+                <ThemedText>Login</ThemedText>
             </Link>
         </ThemedView>
     )
@@ -37,5 +42,9 @@ const styles = StyleSheet.create({
         width : 100,
         height : 100,
         resizeMode: "contain"
+    },
+    title: {
+        fontWeight: 'bold',
+        fontSize: 16
     }
 })
