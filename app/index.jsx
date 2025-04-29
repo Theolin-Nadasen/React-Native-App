@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native'
+import { Pressable, StyleSheet, Text } from 'react-native'
 import React from 'react'
 import { Link } from 'expo-router'
 
@@ -7,6 +7,8 @@ import ThemedView from '../components/ThemedView'
 import ThemedText from '../components/ThemedText'
 import ThemedLogo from '../components/ThemedLogo'
 import Spacer from '../components/Spacer'
+import ThemedPressable from '../components/ThemedPressable'
+
 
 const home = () => {
 
@@ -18,14 +20,22 @@ const home = () => {
             <ThemedText title={true} style={styles.title}>AMAZING APP</ThemedText>
             <Spacer height={5}/>
 
+
+
             <Link href={"/about"}>
                 <ThemedText>Go To About</ThemedText>
             </Link>
             <Spacer height={5}/>
 
-            <Link href={'/login'}>
-                <ThemedText>Login</ThemedText>
+            <Link href={"/login"}>
+                <ThemedText>Go To Login</ThemedText>
             </Link>
+            <Spacer height={5}/>
+            
+            <Link href={"/profile"}>
+                <ThemedText>Go To Profile</ThemedText>
+            </Link>
+            <Spacer height={5}/>
         </ThemedView>
     )
 }
@@ -46,5 +56,5 @@ const styles = StyleSheet.create({
     title: {
         fontWeight: 'bold',
         fontSize: 16
-    }
+    },
 })

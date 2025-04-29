@@ -1,11 +1,20 @@
 import { StyleSheet, Text, TextInput, View } from 'react-native'
 import React from 'react'
+
+
+// Themed components
 import ThemedView from '../../components/ThemedView'
 import ThemedLogo from '../../components/ThemedLogo'
 import ThemedText from '../../components/ThemedText'
+import ThemedPressable from '../../components/ThemedPressable'
 import Spacer from '../../components/Spacer'
 
 const login = () => {
+
+    const toLogin = () => {
+        console.log('button pressed');
+    }
+
     return (
         <>
             <ThemedView style={styles.container}>
@@ -14,8 +23,15 @@ const login = () => {
 
                 <ThemedView style={styles.MidArea}>
                     <TextInput placeholder='name' style={styles.InputColor} />
-                    <Spacer/>
+                    <Spacer />
                     <TextInput placeholder='password' style={styles.InputColor} />
+                    <Spacer />
+
+                    <ThemedPressable onPress={toLogin}>
+                        <Text style={{ color: '#C9AD25', fontWeight: 'bold' }}>Login</Text>
+                    </ThemedPressable>
+                    <Spacer height={5} />
+
                 </ThemedView>
             </ThemedView>
         </>
