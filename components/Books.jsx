@@ -1,5 +1,4 @@
 import { StyleSheet, Image, useColorScheme } from 'react-native'
-import React from 'react'
 
 const Books = () => {
     const colorScheme = useColorScheme();
