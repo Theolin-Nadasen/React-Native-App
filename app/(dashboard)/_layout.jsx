@@ -19,7 +19,7 @@ const dashLayout = () => {
 
         <Tabs.Screen name='profile' options={{title: 'Profile', tabBarIcon: Profile}}/>
         <Tabs.Screen name='create' options={{title: 'Create', tabBarIcon: Create}}/>
-        <Tabs.Screen name='books' options={{title: 'Books', tabBarIcon: Books}}/>
+        <Tabs.Screen name='books' options={{title: 'Pokemon', tabBarIcon: Books}}/>
 
     </Tabs>
   )

@@ -26,11 +26,6 @@ const home = () => {
                 <ThemedText>Go To About</ThemedText>
             </Link>
             <Spacer height={5}/>
-
-            <Link href={"/login"}>
-                <ThemedText>Go To Login</ThemedText>
-            </Link>
-            <Spacer height={5}/>
             
             <Link href={"/profile"}>
                 <ThemedText>Go To Profile</ThemedText>

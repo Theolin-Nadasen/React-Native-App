@@ -29,7 +29,7 @@ const books = () => {
   return (
     <ThemedView style={styles.containerCenter} safe={true}>
       {loading ? (
-        <ThemedText>books</ThemedText>
+        <ThemedText>Loading...</ThemedText>
       )
         :
         (

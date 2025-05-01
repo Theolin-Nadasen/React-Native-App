@@ -6,7 +6,7 @@ import ThemedText from '../../components/ThemedText'
 const create = () => {
   return (
     <ThemedView style={styles.containerCenter}>
-      <ThemedText>create</ThemedText>
+      <ThemedText>You cannot create a Pokemon</ThemedText>
     </ThemedView>
   )
 }
